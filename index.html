@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alessandro Branchetti — Software Engineer → Finance</title>
+<meta name="description" content="Software engineer with 7 years in financial infrastructure, transitioning into quantitative finance and trading.">
+<style>
+  :root {
+    --bg: #fafafa;
+    --surface: #ffffff;
+    --text: #1a1a1a;
+    --muted: #6b6b6b;
+    --accent: #0d6e5f;
+    --border: #e5e5e5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111214;
+      --surface: #1a1c1f;
+      --text: #ececec;
+      --muted: #9a9a9a;
+      --accent: #3ecfb2;
+      --border: #2a2d31;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 1.25rem; }
+  header { padding: 5rem 0 3rem; }
+  h1 { font-size: clamp(1.9rem, 5vw, 2.6rem); font-weight: 700; letter-spacing: -0.02em; }
+  .tagline { font-size: 1.15rem; color: var(--muted); margin-top: 0.5rem; }
+  .tagline strong { color: var(--accent); font-weight: 600; }
+  .links { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.5rem; }
+  .links a {
+    display: inline-block;
+    padding: 0.5rem 1.1rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .links a:hover { border-color: var(--accent); color: var(--accent); }
+  section { padding: 2rem 0; border-top: 1px solid var(--border); }
+  h2 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    margin-bottom: 1rem;
+  }
+  p + p { margin-top: 0.75rem; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1rem; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.1rem;
+  }
+  .card h3 { font-size: 1rem; margin-bottom: 0.35rem; }
+  .card p { font-size: 0.9rem; color: var(--muted); }
+  .skills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .skills span {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0.3rem 0.85rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  footer { padding: 2.5rem 0 3.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.9rem; }
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Alessandro Branchetti</h1>
+    <p class="tagline">Software engineer, 7 years in financial infrastructure — now moving into <strong>quantitative finance &amp; trading</strong>.</p>
+    <nav class="links" aria-label="Profiles">
+      <a href="https://github.com/brnktt" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/alessandro-branchetti" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:brk.alessandro@gmail.com">Email</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p>I spent seven years as a .NET / C# backend engineer building the systems money runs on: live payment processing, investment-fund data pipelines, and observability for financial platforms. That work is now the foundation for a deliberate pivot into finance — trading proprietary capital and building toward quantitative research.</p>
+    <p>Engineering discipline and market experience rarely live in the same person. I'm building a career at that intersection.</p>
+  </section>
+
+  <section>
+    <h2>Background Highlights</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Payments infrastructure</h3>
+        <p>Core payment processing in .NET Core for live cash-terminal systems — TDD discipline, zero critical incidents in production.</p>
+      </div>
+      <div class="card">
+        <h3>Investment fund data</h3>
+        <p>Market-data ingestion and reporting pipelines; detected fraudulent trade anomalies using statistical methods.</p>
+      </div>
+      <div class="card">
+        <h3>Observability at scale</h3>
+        <p>Grafana / ELK / Splunk dashboards and microservices health monitoring — cut mean time to detect by ~30%.</p>
+      </div>
+      <div class="card">
+        <h3>Proprietary trading</h3>
+        <p>Trading prop-firm capital since 2024 — hands-on market experience feeding the transition to quant work.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>C# / .NET</span>
+      <span>Python</span>
+      <span>C++</span>
+      <span>SQL (PostgreSQL, MSSQL)</span>
+      <span>REST APIs &amp; microservices</span>
+      <span>Docker / Kubernetes</span>
+      <span>AWS</span>
+      <span>Risk &amp; compliance (DORA, ISO 27001)</span>
+      <span>Statistical analysis</span>
+    </div>
+  </section>
+
+  <footer>
+    <p>Let's talk — <a href="mailto:brk.alessandro@gmail.com">brk.alessandro@gmail.com</a> · <a href="https://github.com/brnktt">GitHub</a> · <a href="https://www.linkedin.com/in/alessandro-branchetti">LinkedIn</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
